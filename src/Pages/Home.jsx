@@ -1,4 +1,7 @@
 import PizzaImg from '../assets/Images/pizza.png'
+import PizzaMakingImg from '../assets/Images/PizaaMaking.jpeg'
+import { CheckMarkButton } from '../Components/Icons/CheckMarkButton';
+import { BadgeCheckOutline } from '../Components/Icons/BadgeCheckIcom'
 function Home(){
     return(
         <div>
@@ -21,13 +24,66 @@ function Home(){
                             From Our Oven to Your Doorstep
                     </p>
                     <button 
-                        className="px-4 py-2 text-white bg-orange-500 rounded-md hover:bg-orange-600 justify-center"
+                        className="px-4 py-2 text-white bg-orange-500 rounded-md hover:bg-orange-600 justify-center hover:cursor-pointer"
                     >
                         Order Now
                     </button>                    
                 </div>
                 <div>
                     <img src={PizzaImg} alt="pizza image" width={500} height={500} className='rounded-lg' />
+                </div>
+            </section>
+
+            {/* Service section */}
+
+            <section className='py-4 mt-6 bg-gradient-to-r bg-amber-50 to-orange-300'>
+                <div className='container flex flex-col md:flex-row'>
+                    <div className='flex flex-col items-center justify-center rounded-lg lg:w-1/2'>
+                        <img 
+                            src={PizzaMakingImg} 
+                            alt="Pizza Making Image" 
+                            width={500}
+                            className='rounded-lg'
+                        />
+                    </div>
+
+                    <div className='flex flex-col flex-wrap text-center lg:w-1/2 lg:pl-12 lg:text-left'>
+                        <div className='flex flex-col items-center lg:items-start'>
+                            <div>
+                                <h2 
+                                    className='mb-2 text-4xl font-extrabold text-transparent title-font bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text'>
+                                    Cooked by the best chef
+                                </h2>
+                                <p className='text-base leading-relaxed text-[#6B7280]'>
+                                    There are many benifits regarding to that but main ones are: 
+                                </p>
+                            </div>
+                        </div>
+                        <div className='w-full p-1'>
+                            <div className='flex items-center h-full p-2 text-2xl rounded text-[#F38339]'>
+                                <BadgeCheckOutline className='mr-4 w-10 h-10'/>
+                                <span className='font-bold title-font'>Perfect Taste</span>
+                            </div>
+                        </div>
+                        <div className='w-full p-1'> 
+                            <div className='flex items-center h-full p-2 text-2xl rounded text-[#F38339]'>
+                                <BadgeCheckOutline className='mr-4 w-10 h-10'/>
+                                <span className='font-bold title-font'>Food Hygene Guaranteed</span>
+                            </div>
+                        </div>
+                        <div className='w-full p-1'>
+                            <div className='flex items-center h-full p-2 text-2xl rounded text-[#F38339]'>
+                                <BadgeCheckOutline className='mr-4 w-10 h-10'/>
+                                <span className='font-bold title-font'>Taste with love and care</span>
+                            </div>
+                        </div>
+                        <div className='w-full p-1'>
+                            <div className='flex items-center h-full p-2 text-2xl rounded text-[#F38339]'>
+                                <BadgeCheckOutline className=' mr-4 w-10 h-10'/>
+                                <span className='font-bold title-font'>Prepared quickly</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
